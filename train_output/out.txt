@@ -1,0 +1,134 @@
+Environment:
+	Python: 3.8.15
+	PyTorch: 1.12.1
+	Torchvision: 0.13.1
+	CUDA: 11.3
+	CUDNN: 8302
+	NumPy: 1.24.1
+	PIL: 9.4.0
+Args:
+	algorithm: ERM
+	checkpoint_freq: None
+	data_dir: ./domainbed/data/
+	dataset: PACS
+	holdout_fraction: 0.2
+	hparams: None
+	hparams_seed: 0
+	output_dir: train_output
+	restore: None
+	save_model_every_checkpoint: False
+	seed: 0
+	skip_model_save: False
+	steps: None
+	task: domain_generalization
+	test_envs: [0]
+	trial_seed: 0
+	uda_holdout_fraction: 0
+HParams:
+	attention_dropout: 0.0
+	batch_size: 32
+	class_balanced: False
+	data_augmentation: True
+	im21k: False
+	lr: 5e-06
+	nonlinear_classifier: False
+	resnet18: False
+	resnet_dropout: 0.1
+	vit_base_16: True
+	weight_decay: 0.01
+pass <class 'domainbed.datasets.PACS'>
+./domainbed/data/ [0] {'vit_base_16': True, 'im21k': False, 'resnet_dropout': 0.1, 'attention_dropout': 0.0, 'data_augmentation': True, 'resnet18': False, 'class_balanced': False, 'nonlinear_classifier': False, 'lr': 5e-06, 'weight_decay': 0.01, 'batch_size': 32}
+ddddd <domainbed.datasets.PACS object at 0x7f64a05c68e0>
+eeeeeeeeeee Dataset ImageFolder
+    Number of datapoints: 9991
+    Root location: ./domainbed/data/PACS/kfold
+    StandardTransform
+Transform: Compose(
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+iiiiiiii [(<domainbed.lib.misc._SplitDataset object at 0x7f64a05bbe80>, None)]
+lllllllllll [0]
+TTTTTTTT []
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ViT_B_16_Weights.IMAGENET1K_V1`. You can also use `weights=ViT_B_16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/scripts/train.py", line 188, in <module>
+    algorithm = algorithm_class(dataset.input_shape, dataset.num_classes,
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/algorithms.py", line 134, in __init__
+    {'params': self.classifier.parameters(), 'lr': self.hparams["lr_classifier"], 'weight_decay': self.hparams['wd_classifier']}
+KeyError: 'lr_classifier'
+Environment:
+	Python: 3.8.15
+	PyTorch: 1.12.1
+	Torchvision: 0.13.1
+	CUDA: 11.3
+	CUDNN: 8302
+	NumPy: 1.24.1
+	PIL: 9.4.0
+Args:
+	algorithm: ERM
+	checkpoint_freq: None
+	data_dir: ./domainbed/data/
+	dataset: PACS
+	holdout_fraction: 0.2
+	hparams: None
+	hparams_seed: 0
+	output_dir: train_output
+	restore: None
+	save_model_every_checkpoint: False
+	seed: 0
+	skip_model_save: False
+	steps: None
+	task: domain_generalization
+	test_envs: [0]
+	trial_seed: 0
+	uda_holdout_fraction: 0
+HParams:
+	attention_dropout: 0.0
+	batch_size: 32
+	class_balanced: False
+	data_augmentation: True
+	im21k: False
+	lr: 5e-06
+	nonlinear_classifier: False
+	resnet18: False
+	resnet_dropout: 0.1
+	vit_base_16: True
+	weight_decay: 0.01
+pass <class 'domainbed.datasets.PACS'>
+./domainbed/data/ [0] {'vit_base_16': True, 'im21k': False, 'resnet_dropout': 0.1, 'attention_dropout': 0.0, 'data_augmentation': True, 'resnet18': False, 'class_balanced': False, 'nonlinear_classifier': False, 'lr': 5e-06, 'weight_decay': 0.01, 'batch_size': 32}
+ddddd <domainbed.datasets.PACS object at 0x7fe5ac6367f0>
+eeeeeeeeeee Dataset ImageFolder
+    Number of datapoints: 9991
+    Root location: ./domainbed/data/PACS/kfold
+    StandardTransform
+Transform: Compose(
+               Resize(size=(224, 224), interpolation=bilinear, max_size=None, antialias=None)
+               ToTensor()
+               Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+           )
+iiiiiiii [(<domainbed.lib.misc._SplitDataset object at 0x7fe5ac62ae80>, None)]
+lllllllllll [0]
+TTTTTTTT []
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ViT_B_16_Weights.IMAGENET1K_V1`. You can also use `weights=ViT_B_16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/scripts/train.py", line 188, in <module>
+    algorithm = algorithm_class(dataset.input_shape, dataset.num_classes,
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/algorithms.py", line 134, in __init__
+    {'params': self.classifier.parameters(), 'lr': self.hparams["lr_classifier"], 'weight_decay': self.hparams['wd_classifier']}
+KeyError: 'lr_classifier'

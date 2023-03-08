@@ -1,0 +1,28 @@
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ViT_B_16_Weights.IMAGENET1K_V1`. You can also use `weights=ViT_B_16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/scripts/train.py", line 188, in <module>
+    algorithm = algorithm_class(dataset.input_shape, dataset.num_classes,
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/algorithms.py", line 134, in __init__
+    {'params': self.classifier.parameters(), 'lr': self.hparams["lr_classifier"], 'weight_decay': self.hparams['wd_classifier']}
+KeyError: 'lr_classifier'
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/neuron/anaconda3/envs/prompt/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=ViT_B_16_Weights.IMAGENET1K_V1`. You can also use `weights=ViT_B_16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Traceback (most recent call last):
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/neuron/anaconda3/envs/prompt/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/scripts/train.py", line 188, in <module>
+    algorithm = algorithm_class(dataset.input_shape, dataset.num_classes,
+  File "/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/DoPrompt-main/domainbed/algorithms.py", line 134, in __init__
+    {'params': self.classifier.parameters(), 'lr': self.hparams["lr_classifier"], 'weight_decay': self.hparams['wd_classifier']}
+KeyError: 'lr_classifier'
