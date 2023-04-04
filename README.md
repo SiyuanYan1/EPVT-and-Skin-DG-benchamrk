@@ -2,9 +2,9 @@
 EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition
 
 ## Motivation
-![framework](data_proc/motivation.png)
+![alt text](data_proc/motivation.png)
 ## Method
-![framework](data_proc/overall.png)
+![alt text](data_proc/overall.png)
 
 
 
