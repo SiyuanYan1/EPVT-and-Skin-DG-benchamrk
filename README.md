@@ -5,7 +5,7 @@ EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in S
 
 Method:
 
-![framework](images/framework.png)
+
 
 
 
