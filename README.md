@@ -3,7 +3,7 @@ EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in S
 ## Motivation
 ![alt text](image/motivation.png)
 ## Method
-<img src="image/method.png" alt="My Image" width="200">
+<img src="image/method.png" alt="My Image" width="1000">
 
 
 
