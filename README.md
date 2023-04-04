@@ -1,2 +1,15 @@
 # EPVT
-EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition(submitted to MICCAI2023)
+EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition
+
+## Overview
+
+Method:
+
+![framework](images/framework.png)
+
+
+
+
+## Acknowlegdement
+
+This code is built on [DomainBed](https://github.com/facebookresearch/DomainBed),[DoPrompt](https://github.com/zhengzangw/DoPrompt), and [DG_SKIN](https://github.com/alceubissoto/artifact-generalization-skin) . We thank the authors for sharing their codes.
