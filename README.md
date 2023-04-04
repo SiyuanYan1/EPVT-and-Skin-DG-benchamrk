@@ -5,6 +5,11 @@ EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in S
 ## Method
 <img src="image/method.png" alt="My Image" width="1000">
 
+##TODO
+
+- Details on implement the code.
+- Details about preparing the datasets.
+
 
 
 
