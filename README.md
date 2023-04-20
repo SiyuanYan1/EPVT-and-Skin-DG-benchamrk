@@ -1,6 +1,6 @@
 # EPVT
 
-Pytorch implementation of **EPVT** ([Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition]([https://arxiv.org/abs/2208.08914](https://arxiv.org/pdf/2304.01508.pdf)))
+Pytorch implementation of **EPVT** ([Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition](https://arxiv.org/abs/2208.08914](https://arxiv.org/pdf/2304.01508.pdf)))
 ## Motivation
 ![alt text](image/motivation.png)
 ## Method
