@@ -6,7 +6,7 @@ Pytorch implementation of our **MICCAI2023** paper **EPVT** ([Environment-aware 
 ## Method
 <img src="image/method.png" alt="My Image" width="1000">
 
-### Training the code
+### Training and testing
 
 - See run.sh
 
