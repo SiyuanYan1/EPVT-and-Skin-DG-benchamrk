@@ -9,7 +9,7 @@ Pytorch implementation of our **MICCAI2023** paper **EPVT** ([Environment-aware 
 ### Training the code
 
 - See run.sh
-- 
+
 ## TODO
 
 - Details about preparing the datasets.
