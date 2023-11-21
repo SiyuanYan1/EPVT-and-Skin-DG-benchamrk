@@ -23,7 +23,6 @@ pip install -r requirements.txt
 ###domainbed/scripts/test_epvt.py
 
 ## Preparing datasets
-Download datasets
 
 **ISIC2019**: download ISIC2019 training dataset from [here](https://challenge.isic-archive.com/data/#2019)
 
