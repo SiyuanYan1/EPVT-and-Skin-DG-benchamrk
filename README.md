@@ -1,15 +1,16 @@
-# EPVT
+# EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition<br><sub><sub>Official PyTorch implementation of the MICCAI 2023 paper</sub></sub>
+[[`arXiv`](https://arxiv.org/pdf/2304.01508.pdf)]
+[[`BibTex`](#citation)]
+[[`MICCAI paper`](https://link.springer.com/chapter/10.1007/978-3-031-43990-2_24)]
 
 
-Pytorch implementation of our **MICCAI2023** paper ([Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition](https://arxiv.org/pdf/2304.01508.pdf)) and a domain generalization benchmark for skin lesion recognition.
-## Motivation
 ![alt text](image/motivation.png)
 ## Method
 <img src="image/method.png" alt="My Image" width="800">
 
 ## Training
 
-Refer to [DomainBed Readme](README_domainbed.md) for more details on commands running jobs. The training setting sweeps across multiple hyperparameters. Here we select some hyperparameters that can reach a good result. (Update 17/11/22: as many queries about the ERM baseline hyper-parameter, we present them below.)
+Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](README_domainbed.md) for more details on commands running jobs. 
 
 ```sh
 # OfficeHome ERM
