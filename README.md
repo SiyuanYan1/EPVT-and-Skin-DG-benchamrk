@@ -16,7 +16,7 @@ Siyuan Yan, Chi Liu, Zhen Yu, Lie Ju, Dwarikanath Mahapatra, Victoria Mar, Monik
 
 
 ## Installation
-create environment and install packages
+create the environment and install packages
 ```
 conda create -n env_name python=3.8 -y
 conda activate env_name
