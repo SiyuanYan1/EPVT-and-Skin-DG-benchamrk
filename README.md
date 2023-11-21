@@ -26,11 +26,12 @@ pip install -r requirements.txt
 
 **ISIC2019**: download ISIC2019 training dataset from [here](https://challenge.isic-archive.com/data/#2019)
 
-**Derm7pt**: download Derm7pt Clinical and Derm7pt Dermoscopic dataset from [here](https://derm.cs.sfu.ca/Welcome.html))
+**Derm7pt**: download Derm7pt Clinical and Derm7pt Dermoscopic dataset from [here](https://derm.cs.sfu.ca/Welcome.html)
 
 **PH2**: download the PH2 dataset from [here](https://www.fc.up.pt/addi/ph2%20database.html)
 
-**PAD**: download the PAD-UFES-20 dataset from [here](https://paperswithcode.com/dataset/pad-ufes-20
+**PAD**: download the PAD-UFES-20 dataset from [here](https://paperswithcode.com/dataset/pad-ufes-20)
+
 Pre-processing the ISIC2019 dataset to construct the artifacts-based domain generalization training dataset, you need to modify paths in the pre-processing file accordingly.
 ```
 python data_proc/grouping.py
