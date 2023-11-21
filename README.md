@@ -49,25 +49,14 @@ CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_nam
 
 Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](README_domainbed.md) for more details on commands running jobs. 
 
-```sh
-# OfficeHome ERM
-python -m domainbed.scripts.train --data_dir=./domainbed/data/ --steps 5001 --dataset OfficeHome --test_env 0/1/2/3 --algorithm DoPrompt --output_dir results/exp \
-     --hparams '{"lr": 1e-5, "lr_classifier": 1e-4}'
-# OfficeHome
-python -m domainbed.scripts.train --data_dir=./domainbed/data/ --steps 5001 --dataset OfficeHome --test_env 0/1/2/3 --algorithm DoPrompt --output_dir results/exp \
-     --hparams '{"lr": 1e-5, "lr_classifier": 1e-3}'
-# PACS ERM
-python -m domainbed.scripts.train --data_dir=./domainbed/data/ --steps 5001 --dataset PACS --test_env 0/2/3 --algorithm DoPrompt --output_dir results/exp \
-     --hparams '{"lr": 5e-6, "lr_classifier": 5e-5}'
-# PACS
-python -m domainbed.scripts.train --data_dir=./domainbed/data/ --steps 5001 --dataset PACS --test_env 0/2/3 --algorithm DoPrompt --output_dir results/exp \
-     --hparams '{"lr": 5e-6, "lr_classifier": 5e-4}'
-# VLCS ERM
-python -m domainbed.scripts.train --data_dir=./domainbed/data/ --steps 5001 --dataset VLCS --test_env 0/1/2/3 --algorithm DoPrompt --output_dir results/exp \
-     --hparams '{"lr": 5e-6, "lr_classifier": 5e-5}'
-# VLCS
-python -m domainbed.scripts.train --data_dir=./domainbed/data/ --steps 5001 --dataset VLCS --test_env 0/1/2/3 --algorithm DoPrompt --output_dir results/exp \
-     --hparams '{"lr": 5e-6, "lr_classifier": 5e-6}'
+```
+# Training isic2019
+
+CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.train_epvt --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm DoPrompt_group_decompose --output_dir \
+results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier": 1e-5, "prompt_dim":10}' --exp 'prompt_final_vis' --ood_vis True
+
+## test EPVT on four ood datasets
+CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_epvt --model_name 'prompt_final_vis.pkl'
 ```
 
 ## Collect Results
