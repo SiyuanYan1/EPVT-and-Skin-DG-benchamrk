@@ -39,9 +39,9 @@ Pre-processing the ISIC2019 dataset to construct the artifacts-based domain gene
 python data_proc/grouping.py
 ```
 
-## Directly accessing the processed datasets via GoogleDrive
+## Directly accessing all datasets via GoogleDrive
 
-All processed datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing)
+The processed ISIC2019 dataset  and 4 OOD testing datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing)
 
 
 
