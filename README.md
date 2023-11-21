@@ -12,7 +12,7 @@
 
 
 ## Installation
-create the environment and install packages
+Create the environment and install packages
 ```
 conda create -n env_name python=3.8 -y
 conda activate env_name
