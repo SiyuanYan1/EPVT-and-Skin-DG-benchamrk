@@ -47,18 +47,18 @@ Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme]
 
 ```sh
 # Training EPVT on ISIC2019
-CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.train_epvt --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm DoPrompt_group_decompose --output_dir \
+CUDA_VISIBLE_DEVICES=0 python -m domainbed/scripts/train_epvt.py --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm DoPrompt_group_decompose --output_dir \
 results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier": 1e-5, "prompt_dim":10}' --exp 'prompt_final_vis' --ood_vis True
 
 #Test EPVT on four OOD datasets
-CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_epvt --model_name 'prompt_final_vis.pkl'
+CUDA_VISIBLE_DEVICES=0 python -m domainbed/scripts/test_epvt.py --model_name 'prompt_final_vis.pkl'
 
 #Training ERM baseline on ISIC2019
-CUDA_VISIBLE_DEVICES=1 python -m domainbed.scripts.train_erm --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm ERM \
+CUDA_VISIBLE_DEVICES=1 python -m domainbed/scripts/train_erm.py --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm ERM \
 --output_dir results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier":1e-5}' --exp 'erm_baseline'
 
 #Test ERM on four ood datasets
-CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_name 'erm_baseline.pkl'
+CUDA_VISIBLE_DEVICES=1  python -m domainbed/scripts/test_erm.py --model_name 'erm_baseline.pkl'
 ```
 
 
