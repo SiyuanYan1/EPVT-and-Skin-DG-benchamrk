@@ -4,9 +4,8 @@ import shutil
 
 
 
-root="/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/artifact-generalization-skin/"
-root_dir =  '/mount/neuron/Lamborghini/dir/pythonProject/CVPR/data/ISIC_2019_Training_Input/'
-root_csv = root+"group_DRO/trap_sets_paper2021/train_bias_0_1.csv"
+root="/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/EPVT/data_proc"
+root_csv = root+"train_bias_0_1.csv"
 
 confounder_names = ["dark_corner", "hair", "gel_border", "gel_bubble", "ink", "ruler", "patches"]
 # Read in attributes
@@ -55,26 +54,25 @@ print(df_final)
 df_final.to_csv('train_0bias.csv')
 print('dark corner',df_final['dark_corner'][df_final['dark_corner']==1].sum())
 print('hair',df_final['hair'][df_final['hair']==1].sum())
-# print('gel border',df_final['gel_border'][df_final['gel_border']==1].sum())
 print('gel bubble',df_final['gel_bubble'][df_final['gel_bubble']==1].sum())
 print('ruler',df_final['ruler'][df_final['ruler']==1].sum())
 print('clean',df_final['clean'][df_final['clean']==1].sum())
-# print('ink',df_final['ink'][df_final['ink']==1].sum())
-# print('patches',df_final['patches'][df_final['patches']==1].sum())
 #
+
+#copy isic2019 dataset into a new folder with our domain generalization format
 source_dir='/mount/neuron/Lamborghini/dir/pythonProject/CVPR/data/ISIC_2019_Training/'
-target_dir='/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/prompt_derm/domainbed/data/ISIC2019_train/'
-#
-# for index,row in df_final.iterrows():
-#     filename=source_dir+row['image']+'.jpg'
-#     sub_dir=row[row==1].index[0]
-#     label=row['label']
-#     if label==1:
-#         label_name='mel'
-#     elif label==0:
-#         label_name='ben'
-#     else:
-#         label_name='!!!!!!!!!!!!!'
-#     dest = shutil.copy2(filename, target_dir+sub_dir+'/'+label_name+'/')
-#     print(dest)
+target_dir='/mount/neuron/Lamborghini/dir/pythonProject/MICCAI/EPVT/domainbed/data/ISIC2019_train/'
+
+for index,row in df_final.iterrows():
+    filename=source_dir+row['image']+'.jpg'
+    sub_dir=row[row==1].index[0]
+    label=row['label']
+    if label==1:
+        label_name='mel'
+    elif label==0:
+        label_name='ben'
+    else:
+        label_name='!'
+    dest = shutil.copy2(filename, target_dir+sub_dir+'/'+label_name+'/')
+    print(dest)
 
