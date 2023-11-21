@@ -43,7 +43,7 @@ python data_proc/grouping.py
 ```
 ## Directly accessing the processed datasets via GoogleDrive
 
-All necessary processed datasets are in [GoogleDrive](README_domainbed.md)
+All processed datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing)
 
 
 
