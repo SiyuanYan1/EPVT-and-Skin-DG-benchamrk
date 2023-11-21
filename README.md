@@ -38,9 +38,8 @@ python data_proc/grouping.py
 
 ## Directly accessing all datasets via GoogleDrive
 
-The processed ISIC2019 dataset  and 4 OOD testing datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing)
-
-
+The processed ISIC2019 dataset  and 4 OOD testing datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing).
+Please refer to our paper and its supplementary material for more details about these datasets.
 
 ## Training
 
