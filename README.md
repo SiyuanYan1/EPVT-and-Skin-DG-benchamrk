@@ -1,7 +1,7 @@
 # EPVT
 
 
-Pytorch implementation of our **MICCAI2023** paper **Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition and a domain generalization benchmark for skin lesion recognition** ([Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition](https://arxiv.org/pdf/2304.01508.pdf)) and a domain generalization benchmark for skin lesion recognition.
+Pytorch implementation of our **MICCAI2023** paper **Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition ** ([Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition](https://arxiv.org/pdf/2304.01508.pdf)) and a domain generalization benchmark for skin lesion recognition.
 ## Motivation
 ![alt text](image/motivation.png)
 ## Method
