@@ -1,4 +1,4 @@
-# EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition<br><sub><sub>Official PyTorch implementation of the MICCAI 2023 paper</sub></sub>
+# EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition<br><sub><sub>Official PyTorch implementation of the MICCAI 2023 paper and a domain generalization benchmark for skin lesion recognition</sub></sub>
 [[`arXiv`](https://arxiv.org/pdf/2304.01508.pdf)]
 [[`BibTex`](#citation)]
 [[`MICCAI paper`](https://link.springer.com/chapter/10.1007/978-3-031-43990-2_24)]
@@ -18,9 +18,6 @@ conda create -n env_name python=3.8 -y
 conda activate env_name
 pip install -r requirements.txt
 ```
-
-###our core code of algorithm is in class DoPrompt_group_decompose in domainbed/algorithms.py, our training and testing code are in domainbed/scripts/train_epvt.py and
-###domainbed/scripts/test_epvt.py
 
 ## Preparing datasets
 
