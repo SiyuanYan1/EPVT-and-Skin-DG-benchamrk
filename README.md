@@ -63,29 +63,13 @@ CUDA_VISIBLE_DEVICES=1 python -m domainbed.scripts.train_erm --data_dir=./domain
 --output_dir results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier":1e-5}' --exp 'erm_baseline'
 
 #Test ERM on four ood datasets
-CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_nam
+CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_name 'erm_baseline.pkl'
 ```
 
-## Requirements
-
-```sh
-pip install -r requirements.txt
-```
-
-## Citation
-
-```bibtex
-@article{zheng2022prompt,
-  title={Prompt Vision Transformer for Domain Generalization},
-  author={Zheng, Zangwei and Yue, Xiangyu and Wang, Kai and You, Yang},
-  journal={arXiv preprint arXiv:2208.08914},
-  year={2022}
-}
-```
 
 ## TODO
 
-- Details about preparing the datasets.
+- Plan to release a medical bigger domain generalization benchmark for Melanoma classification (Dermatology), Diabetic Retinopathy classification (Ophthalmology) and Cancerous Tissue Detection (Histopathology).
 
 
 ## Citation
