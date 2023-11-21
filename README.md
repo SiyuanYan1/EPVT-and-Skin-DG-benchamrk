@@ -26,16 +26,6 @@ pip install -r requirements.txt
 ###our core code of algorithm is in class DoPrompt_group_decompose in domainbed/algorithms.py, our training and testing code are in domainbed/scripts/train_epvt.py and
 ###domainbed/scripts/test_epvt.py
 
-### train our EPVT ###
-#training isic2019
-
-CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.train_epvt --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm DoPrompt_group_decompose --output_dir \
-results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier": 1e-5, "prompt_dim":10}' --exp 'prompt_final_vis' --ood_vis True
-
-##test EPVT on four ood datasets
-CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_epvt --model_name 'prompt_final_vis.pkl'
-
-
 
 
 
@@ -45,7 +35,7 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_epvt --model_name 'promp
 Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](README_domainbed.md) for more details on commands running jobs. 
 
 ```
-#Training EPVT on ISIC2019
+# Training EPVT on ISIC2019
 
 CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.train_epvt --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm DoPrompt_group_decompose --output_dir \
 results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier": 1e-5, "prompt_dim":10}' --exp 'prompt_final_vis' --ood_vis True
