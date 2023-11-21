@@ -1,4 +1,4 @@
-# EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition<br><sub><sub>Official PyTorch implementation of the MICCAI 2023 paper and a domain generalization benchmark for skin lesion recognition</sub></sub>
+# EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition<br><sub><sub>Official PyTorch implementation of the MICCAI 2023 paper and a domain generalization benchmark for skin lesion recognition.</sub></sub>
 [[`arXiv`](https://arxiv.org/pdf/2304.01508.pdf)]
 [[`BibTex`](#citation)]
 [[`MICCAI paper`](https://link.springer.com/chapter/10.1007/978-3-031-43990-2_24)]
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ## Pre-processing datasets
 
-Pre-processing the ISIC2019 dataset to construct the artifacts-based domain generalization training dataset, you need to modify paths in the pre-processing file accordingly.
+Pre-processing the ISIC2019 dataset to construct the artifacts-based domain generalization training dataset, you need to modify path names in the pre-processing file accordingly.
 ```
 python data_proc/grouping.py
 ```
