@@ -28,18 +28,7 @@ pip install -r requirements.txt
 
 ## Preparing datasets
 
-Put each dataset in a folder under the `data` directory as follows:
-
-```bash
-data
-├── bar
-├── bffhq
-├── celeba
-├── lsun
-├── multi_color_mnist
-└── places365
-```
-
+Download datasets
 **ISIC2019**: download ISIC2019 training dataset from [here]([https://github.com/alinlab/BAR](https://challenge.isic-archive.com/data/#2019))
 
 **Derm7pt**: download Derm7pt Clinical and Derm7pt Dermoscopic dataset from [here]([https://github.com/switchablenorms/CelebAMask-HQ](https://derm.cs.sfu.ca/Welcome.html)) 
@@ -48,10 +37,19 @@ data
 
 **PAD**: download the PAD-UFES-20 dataset from [here]([http://places2.csail.mit.edu/download.html](https://paperswithcode.com/dataset/pad-ufes-20)) 
 
+Pre-processing the ISIC2019 dataset to construct the artifacts-based domain generalization training dataset, you need to modify paths in the pre-processing file accordingly.
+```
+python data_proc/grouping.py
+```
+## Directly accessing the processed datasets via GoogleDrive
+
+All necessary processed datasets are in [GoogleDrive](README_domainbed.md)
+
+
 
 ## Training
 
-Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](README_domainbed.md) for more details on commands running jobs. 
+Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](https://github.com/facebookresearch/DomainBed) for more details on commands running jobs. 
 
 ```sh
 # Training EPVT on ISIC2019
