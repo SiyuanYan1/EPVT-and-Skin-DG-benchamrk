@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](README_domainbed.md) for more details on commands running jobs. 
 
-```
+```sh
 # Training EPVT on ISIC2019
 
 CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.train_epvt --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm DoPrompt_group_decompose --output_dir \
