@@ -66,19 +66,19 @@ CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_name 'erm_b
 
 ## TODO
 
-- Plan to release a medical bigger domain generalization benchmark for Melanoma classification (Dermatology), Diabetic Retinopathy classification (Ophthalmology) and Cancerous Tissue Detection (Histopathology).
+- Plan to release a new medical domain generalization benchmark for Melanoma classification (Dermatology), Diabetic Retinopathy classification (Ophthalmology), and Cancerous Tissue Detection (Histopathology).
 
 
 ## Citation
 
 ```bibtex
-@misc{yan2023epvt,
-      title={EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition}, 
-      author={Siyuan Yan and Chi Liu and Zhen Yu and Lie Ju and Dwarikanath Mahapatrainst and Victoria Mar and Monika Janda and Peter Soyer and Zongyuan Ge},
-      year={2023},
-      eprint={2304.01508},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{yan2023epvt,
+  title={EPVT: Environment-Aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition},
+  author={Yan, Siyuan and Liu, Chi and Yu, Zhen and Ju, Lie and Mahapatra, Dwarikanath and Mar, Victoria and Janda, Monika and Soyer, Peter and Ge, Zongyuan},
+  booktitle={International Conference on Medical Image Computing and Computer-Assisted Intervention},
+  pages={249--259},
+  year={2023},
+  organization={Springer}
 }
 ```
 
