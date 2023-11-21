@@ -32,6 +32,8 @@ pip install -r requirements.txt
 
 **PAD**: download the PAD-UFES-20 dataset from [here](https://paperswithcode.com/dataset/pad-ufes-20)
 
+## Pre-processing datasets
+
 Pre-processing the ISIC2019 dataset to construct the artifacts-based domain generalization training dataset, you need to modify paths in the pre-processing file accordingly.
 ```
 python data_proc/grouping.py
