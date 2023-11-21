@@ -23,7 +23,9 @@ pip install -r requirements.txt
 ###domainbed/scripts/test_epvt.py
 
 ## Preparing datasets
-
+```
+python data_proc/grouping.py
+```
 Download datasets
 **ISIC2019**: download ISIC2019 training dataset from [here](https://challenge.isic-archive.com/data/#2019)
 
@@ -34,9 +36,7 @@ Download datasets
 **PAD**: download the PAD-UFES-20 dataset from [here](https://paperswithcode.com/dataset/pad-ufes-20)
 
 Pre-processing the ISIC2019 dataset to construct the artifacts-based domain generalization training dataset, you need to modify paths in the pre-processing file accordingly.
-```
-python data_proc/grouping.py
-```
+
 ## Directly accessing the processed datasets via GoogleDrive
 
 All processed datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing)
