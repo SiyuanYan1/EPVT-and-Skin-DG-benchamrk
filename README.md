@@ -37,12 +37,7 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_epvt --model_name 'promp
 
 
 
-#### train ERM baseline ###
-CUDA_VISIBLE_DEVICES=1 python -m domainbed.scripts.train_erm --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm ERM \
---output_dir results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier":1e-5}' --exp 'erm_baseline'
-##test ERM on four ood datasets
 
-CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_nam
 
 
 ## Training
@@ -50,19 +45,20 @@ CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_nam
 Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](README_domainbed.md) for more details on commands running jobs. 
 
 ```
-# Training isic2019
+#Training EPVT on ISIC2019
 
 CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.train_epvt --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm DoPrompt_group_decompose --output_dir \
 results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier": 1e-5, "prompt_dim":10}' --exp 'prompt_final_vis' --ood_vis True
 
-## test EPVT on four ood datasets
+#Test EPVT on four OOD datasets
 CUDA_VISIBLE_DEVICES=0 python -m domainbed.scripts.test_epvt --model_name 'prompt_final_vis.pkl'
-```
 
-## Collect Results
+#Training ERM baseline on ISIC2019
+CUDA_VISIBLE_DEVICES=1 python -m domainbed.scripts.train_erm --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm ERM \
+--output_dir results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier":1e-5}' --exp 'erm_baseline'
 
-```sh
-python -m domainbed.scripts.collect_results --input_dir=results
+#Test ERM on four ood datasets
+CUDA_VISIBLE_DEVICES=1  python -m domainbed.scripts.test_erm --model_nam
 ```
 
 ## Requirements
