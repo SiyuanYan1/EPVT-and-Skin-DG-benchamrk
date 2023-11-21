@@ -64,7 +64,7 @@ CUDA_VISIBLE_DEVICES=1  python -m domainbed/scripts/test_erm.py --model_name 'er
 
 ## TODO
 
-- Plan to release a new medical domain generalization benchmark for Melanoma classification (Dermatology), Diabetic Retinopathy classification (Ophthalmology), and Cancerous Tissue Detection (Histopathology).
+- Plan to release a new medical domain generalization benchmark for Melanoma Recognition (Dermatology), Diabetic Retinopathy Classification (Ophthalmology), and Cancerous Tissue Detection (Histopathology).
 
 
 ## Citation
