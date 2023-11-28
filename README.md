@@ -37,6 +37,18 @@ Pre-processing the ISIC2019 dataset to construct the artifacts-based domain gene
 python data_proc/grouping.py
 ```
 
+Put each dataset in a folder under the `domainbed/data` directory as follows:
+
+```
+data
+├── ISIC2019_train
+│   ├── clean
+│   │   ├──ben
+│   │   ├──mel
+│   ├── dark_corner
+│   ├── gel_bubble
+│   ├── ...
+```
 ## Directly accessing all datasets via GoogleDrive
 
 The processed ISIC2019 dataset  and 4 OOD testing datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing).
