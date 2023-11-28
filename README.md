@@ -1,4 +1,6 @@
-# EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition<br><sub><sub>Official PyTorch implementation of the MICCAI 2023 paper and a domain generalization benchmark for skin lesion recognition.</sub></sub>
+# EPVT: Environment-aware Prompt Vision Transformer for Domain Generalization in Skin Lesion Recognition
+
+Official PyTorch implementation of the MICCAI 2023 paper and a domain generalization benchmark for skin lesion recognition.
 [[`arXiv`](https://arxiv.org/pdf/2304.01508.pdf)]
 [[`BibTex`](#citation)]
 [[`MICCAI paper`](https://link.springer.com/chapter/10.1007/978-3-031-43990-2_24)]
