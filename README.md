@@ -11,7 +11,7 @@ Official PyTorch implementation of the MICCAI 2023 paper and a domain generaliza
 
 
 
-## TODO
+## News
 
 - The new medical domain generalization benchmark for Melanoma Recognition (Dermatology), Diabetic Retinopathy Classification (Ophthalmology), and Cancerous Tissue Detection (Histopathology) has been released at https://github.com/SiyuanYan1/PLDG. 
 
