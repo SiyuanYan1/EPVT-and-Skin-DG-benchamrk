@@ -11,6 +11,10 @@ Official PyTorch implementation of the MICCAI 2023 paper and a domain generaliza
 
 
 
+## TODO
+
+- The new medical domain generalization benchmark for Melanoma Recognition (Dermatology), Diabetic Retinopathy Classification (Ophthalmology), and Cancerous Tissue Detection (Histopathology) has been released at https://github.com/SiyuanYan1/PLDG. 
+
 
 ## Installation
 Create the environment and install packages
@@ -71,12 +75,6 @@ CUDA_VISIBLE_DEVICES=1 python -m domainbed/scripts/train_erm.py --data_dir=./dom
 #Test ERM on four ood datasets
 CUDA_VISIBLE_DEVICES=1  python -m domainbed/scripts/test_erm.py --model_name 'erm_baseline.pkl'
 ```
-
-
-## TODO
-
-- Plan to release a new medical domain generalization benchmark for Melanoma Recognition (Dermatology), Diabetic Retinopathy Classification (Ophthalmology), and Cancerous Tissue Detection (Histopathology).
-
 
 ## Citation
 
