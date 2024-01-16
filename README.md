@@ -13,7 +13,7 @@ Official PyTorch implementation of the MICCAI 2023 paper and a domain generaliza
 
 ## News
 
-- The extended version has been released at https://github.com/SiyuanYan1/PLDG. 
+- The extended version has been released at https://github.com/SiyuanYan1/PLDG. We propose a universal domain generalization framework for medical image classification without relying on any domain labels.
 
 
 ## Installation
