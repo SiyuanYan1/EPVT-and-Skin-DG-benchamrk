@@ -57,6 +57,11 @@ data
 The processed ISIC2019 dataset  and 4 OOD testing datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing).
 Please refer to our paper and its supplementary material for more details about these datasets.
 
+## CSV files for the 4 OOD test datasets
+You can find them in the repo https://github.com/alceubissoto/artifact-generalization-skin.
+
+
+
 ## Training
 
 Our benchmark is modified based on DomainBed, please refer to [DomainBed Readme](https://github.com/facebookresearch/DomainBed) for more details on commands running jobs. 
