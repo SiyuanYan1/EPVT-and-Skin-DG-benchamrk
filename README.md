@@ -57,7 +57,7 @@ data
 The processed ISIC2019 dataset  and 4 OOD testing datasets are in [GoogleDrive](https://drive.google.com/file/d/12SoMs_44jD4mRT6JEyIfdjBa4Fw07i2m/view?usp=sharing).
 Please refer to our paper and its supplementary material for more details about these datasets.
 
-## CSV files for the 4 OOD test datasets
+## CSV files for 4 OOD datasets
 You can find them in the repo https://github.com/alceubissoto/artifact-generalization-skin.
 
 
@@ -78,7 +78,7 @@ CUDA_VISIBLE_DEVICES=0 python -m domainbed/scripts/test_epvt.py --model_name 'pr
 CUDA_VISIBLE_DEVICES=1 python -m domainbed/scripts/train_erm.py --data_dir=./domainbed/data/ --steps 1501 --dataset SKIN --test_env 0 --algorithm ERM \
 --output_dir results/exp --hparams '{"lr": 5e-6, "lr_classifier": 5e-5,"batch_size":26,"wd_classifier":1e-5}' --exp 'erm_baseline'
 
-#Test ERM on four ood datasets
+#Test ERM on four OOD datasets
 CUDA_VISIBLE_DEVICES=1  python -m domainbed/scripts/test_erm.py --model_name 'erm_baseline.pkl'
 ```
 
