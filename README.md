@@ -94,7 +94,7 @@ CUDA_VISIBLE_DEVICES=1  python -m domainbed/scripts/test_erm.py --model_name 'er
   organization={Springer}
 }
 ```
-```
+```bibtex
 @article{yan2024prompt,
   title={Prompt-driven Latent Domain Generalization for Medical Image Classification},
   author={Yan, Siyuan and Liu, Chi and Yu, Zhen and Ju, Lie and Mahapatra, Dwarikanath and Betz-Stablein, Brigid and Mar, Victoria and Janda, Monika and Soyer, Peter and Ge, Zongyuan},
